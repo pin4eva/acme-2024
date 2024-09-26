@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+$gray: #354046;
+$primary: #df371d;
+
+html {
+  font-size: 14px;
+  @media screen and (min-width: 786px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  // background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  background-color: $primary;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 80%;
+  margin: auto;
+}
+
+// HEADER
+
+header {
+  background-color: $gray;
+  color: white;
+  padding-block: 1rem;
+  border-bottom: 4px solid $primary;
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  // logo
+  .logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    .logo-brand {
+      color: $primary;
+    }
+  }
+
+  // nav list (UL)
+  ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    a {
+      text-transform: uppercase;
+      &.active {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.news-letter {
+  background-color: $gray;
+  color: white;
+  padding-block: 1rem;
+  .news-letter-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  p {
+    margin: 0;
+  }
+
+  .news-letter-input {
+    input {
+      padding: 0.6rem;
+    }
+    .btn {
+      padding: 0.6rem 1rem;
+      color: inherit;
+      background-color: $primary;
+      border-color: $primary;
+    }
+  }
+}

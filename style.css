@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+html {
+  font-size: 14px;
+}
+@media screen and (min-width: 786px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  background-color: #df371d;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 80%;
+  margin: auto;
+}
+
+header {
+  background-color: #354046;
+  color: white;
+  padding-block: 1rem;
+  border-bottom: 4px solid #df371d;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header .logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+header .logo .logo-brand {
+  color: #df371d;
+}
+header ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+header ul a {
+  text-transform: uppercase;
+}
+header ul a.active {
+  color: #df371d;
+}
+
+.news-letter {
+  background-color: #354046;
+  color: white;
+  padding-block: 1rem;
+}
+.news-letter .news-letter-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.news-letter p {
+  margin: 0;
+}
+.news-letter .news-letter-input input {
+  padding: 0.6rem;
+}
+.news-letter .news-letter-input .btn {
+  padding: 0.6rem 1rem;
+  color: inherit;
+  background-color: #df371d;
+  border-color: #df371d;
+}
